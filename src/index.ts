@@ -1,9 +1,10 @@
 #!/usr/bin/env node
-import {init} from '@/src/commands/init'
-import {page} from '@/src/commands/page'
-import {component} from '@/src/commands/component'
 
 import {Command} from 'commander'
+
+// Commands
+import {component,init,page} from '@/src/commands/index'
+
 
 async function main(){
     const program = new Command()

@@ -1,4 +1,4 @@
-export const demo = `
+
 import React from 'react';
 
 const DondeEstamos = () => {
@@ -11,4 +11,3 @@ const DondeEstamos = () => {
 };
 
 export default DondeEstamos;
-`;

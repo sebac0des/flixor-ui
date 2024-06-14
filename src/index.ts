@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 import {init} from '@/src/commands/init'
+import {page} from '@/src/commands/page'
+import {component} from '@/src/commands/component'
+
 import {Command} from 'commander'
 
 async function main(){
@@ -12,7 +15,7 @@ async function main(){
       "display the version number"
     )
 
-    program.addCommand(init)
+    program.addCommand(init).addCommand(page).addCommand(component)
 
     program.parse()
 

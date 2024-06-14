@@ -1,0 +1,36 @@
+{
+  "name": "tu-nombre-de-paquete",
+  "version": "0.1.0",
+  "description": "Descripción de tu CLI de generación de componentes React",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": "dist/index.js",
+  "scripts": {
+    "build": "tsup",
+    "clean": "rimraf dist",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "cli",
+    "component-generator"
+  ],
+  "author": "Tu Nombre <tu.email@dominio.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tuusuario/tu-repo.git"
+  },
+  "dependencies": {
+    "tsconfig-paths": "^4.2.0"
+  },
+  "devDependencies": {
+    "rimraf": "^4.1.3",
+    "tsup": "^6.6.3",
+    "typescript": "^4.9.3"
+  }
+}
+

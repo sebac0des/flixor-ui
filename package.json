@@ -10,6 +10,7 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
+    "start":"node dist/index.mjs",
     "clean": "rimraf dist",
     "prepare": "npm run build"
   },
@@ -28,6 +29,8 @@
     "url": "git+https://github.com/sebac0des/flixor-ui.git"
   },
   "dependencies": {
+    "commander": "^12.1.0",
+    "prompts": "^2.4.2",
     "tsconfig-paths": "^4.2.0"
   },
   "devDependencies": {

@@ -4,17 +4,18 @@ import chalk from 'chalk'
 
 export const component = new Command('component')
   .description('add component to your project')
-  .action(() => {
+  .action(async () => {
     try {
-      PromptForConfig()
+      const componentName = await promptForComponent()
+      console.log('this is my component',componentName)
     }catch(e){}
   })
 
-export async function PromptForConfig(){
+export async function promptForComponent(){
 
   const highlight = (text:string)=>chalk.green(text)
 
-  const options = await prompts([
+ const componentPrompt = await prompts(
     {
       type: "select",
       name: "component",
@@ -24,9 +25,9 @@ export async function PromptForConfig(){
         { title: "Input", value: "input" },
       ],
     },
-  ])
+  )
 
-  
+  return componentPrompt.component
 }
 
 

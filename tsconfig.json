@@ -3,6 +3,7 @@
     "compilerOptions": {
       "isolatedModules": false,
       "moduleResolution": "node",
+      "esModuleInterop": true,
       "baseUrl": ".",
       "paths": {
         "@/*": ["./*"]
